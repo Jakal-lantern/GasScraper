@@ -25,6 +25,11 @@ namespace Webscraper
             OutputToJson(GetGasPrices(userInput));
         }
 
+        /* State Select Function
+         * - Searches through a list of states to return url
+         * PARAMS - (string) full state name
+         * RETURNS - (string) state url / null
+         */
         static string StateSelect(string state)
         {
             // Create lists
@@ -144,15 +149,15 @@ namespace Webscraper
                     return urls[i];
                 }
             }
-
             // If no state is found return 'NONE'
             return "NONE";
         }
 
-
-
-        // Access and store prices from html
-        // RETURNS: CurrentPrices
+        /* Get Gas Prices Function
+         * - Accesses and stores prices from html
+         * PARAMS - (string) state url
+         * RETURNS - (CurrentPrices) object containing current prices
+         */
         static CurrentPrices GetGasPrices(string url)
         {
             // Access Html
@@ -169,15 +174,21 @@ namespace Webscraper
             return currentPrices;
         }
 
-        // Access and store webpage html
-        // RETURNS: Html
+        /* Get Html Function
+         * - Accesses and store webpage html
+         * PARAMS - (string) state url
+         * RETURNS - (HtmlNode) webpage doc
+         */
         static HtmlNode GetHtml(string url)
         {
             WebPage webpage = _scrapingBrowser.NavigateToPage(new Uri(url));
             return webpage.Html;
         }
 
-        // Output 'currentPrices' to json file
+        /* Output to Json Function 
+         * - Outputs CurrentPrices object to json file in 'Temp' folder
+         * PARAMS - (CurrentPrices) object containing current prices
+         */
         static void OutputToJson(CurrentPrices currentPrices)
         {
             // Create output variable
@@ -197,14 +208,5 @@ namespace Webscraper
             // Write string to file
             File.WriteAllText(@"C:\Temp\CurrentGasPrices.json", json);
         }
-    }
-
-    // Object for storing gas prices
-    public class CurrentPrices
-    {
-        public string Regular { get; set; }
-        public string MidGrade { get; set; }
-        public string Premium { get; set; }
-        public string Diesel { get; set; }
     }
 }

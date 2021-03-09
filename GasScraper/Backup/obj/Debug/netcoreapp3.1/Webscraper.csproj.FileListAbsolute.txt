@@ -1,0 +1,4 @@
+C:\Users\sarene_alexander\Desktop\GasScraper-main\GasScraper\Backup\obj\Debug\netcoreapp3.1\Webscraper.csprojAssemblyReference.cache
+C:\Users\sarene_alexander\Desktop\GasScraper-main\GasScraper\Backup\obj\Debug\netcoreapp3.1\Webscraper.AssemblyInfoInputs.cache
+C:\Users\sarene_alexander\Desktop\GasScraper-main\GasScraper\Backup\obj\Debug\netcoreapp3.1\Webscraper.AssemblyInfo.cs
+C:\Users\sarene_alexander\Desktop\GasScraper-main\GasScraper\Backup\obj\Debug\netcoreapp3.1\Webscraper.csproj.CoreCompileInputs.cache

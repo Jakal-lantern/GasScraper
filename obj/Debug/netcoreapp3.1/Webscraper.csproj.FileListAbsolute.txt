@@ -1,0 +1,3 @@
+C:\Users\sarene_alexander\Desktop\GasScraper-main\obj\Debug\netcoreapp3.1\Webscraper.AssemblyInfoInputs.cache
+C:\Users\sarene_alexander\Desktop\GasScraper-main\obj\Debug\netcoreapp3.1\Webscraper.AssemblyInfo.cs
+C:\Users\sarene_alexander\Desktop\GasScraper-main\obj\Debug\netcoreapp3.1\Webscraper.csproj.CoreCompileInputs.cache
